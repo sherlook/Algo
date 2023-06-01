@@ -5,9 +5,7 @@
  * @question 785. 快速排序
  * @version 0.1
  * @date 2023-06-01
- * 
  * @copyright Copyright (c) 2023
- * 
  */
 
 #include<iostream>
