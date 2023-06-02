@@ -2,10 +2,20 @@
  * @file 1.1 sort.cpp
  * @author sher
  * @brief 快排模板
+ * @question 785. 快速排序
  * @version 0.1
  * @date 2023-06-01
  * @copyright Copyright (c) 2023
  */
+
+#include<iostream>
+
+using namespace std;
+
+const int N = 1e6+10;
+
+int n;
+int q[N];
 
 void quick_sort(int q[], int l, int r)
 {
@@ -21,3 +31,16 @@ void quick_sort(int q[], int l, int r)
     quick_sort(q, l, j);
     quick_sort(q, j+1, r);
 }
+
+int main()
+{
+    scanf("%d", &n);
+
+    for(int i=0; i<n; i++)
+        scanf("%d", &q[i]);
+    quick_sort(q, 0, n-1);
+    for(int i=0; i<n; i++)
+        printf("%d ", q[i]);
+    return 0;
+}
+
